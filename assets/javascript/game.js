@@ -58,6 +58,10 @@ $(document).ready(function() {
       alert("You must be psychic! You guessed the correct letter: " + secretLetter);
       resetGame();
     }
+    //guesses incorrectly but still has chances Left
+    else if (userGuess != secretLetter && GuessesLeftCounter > 0) {
+      alert("Try Again!");
+    }
     // When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins).
     else if (GuessesLeftCounter <= 0) {
       losses++;
