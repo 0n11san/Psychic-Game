@@ -2,6 +2,10 @@
 
 <head>
   <meta charset="UTF-8">
+  
+  //required meta tag for Bootstrap per documentation located here--> https://getbootstrap.com/docs/4.0/getting-started/introduction/
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
   <title> Psychic Game </title>
 
   <!-- link to Bootsrap CSS -->
@@ -17,7 +21,7 @@
   <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </head>
-<div class="container">
+<div id="mainContainer" class="container">
   <h2>The Psychic Game</h2>
   <p>Guess what letter I'm thinking of</p>
   <p id="Wins">Wins: </p>
@@ -28,8 +32,6 @@
   <!--(# of guesses left. This will update)-->
   <p id="GuessesThusFar">Your Guesses So Far: </p>
   <!--(the specific letters that the user typed. Display these until the user either wins or loses.)-->
-
-
 </div>
 
 <body>
