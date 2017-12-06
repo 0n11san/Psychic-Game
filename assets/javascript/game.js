@@ -7,6 +7,7 @@ var letters = ["a", "b", "c", "d", "e", "f", "g",
 var secretLetter = letters[Math.floor(Math.random() * letters.length)]
 console.log(secretLetter)
 
+//set global variables (e.g. those ones which can accessed from all branching functions)
 var wins = 0;
 console.log("wins: " + wins);
 var losses = 0;
@@ -21,6 +22,7 @@ function pushCounts() {
   document.querySelector("#Losses").innerHTML = "Losses: " + losses;
 }
 
+//resets game
 function resetGame() {
   GuessesLeftCounter = 6;
   GuessesThusFar = [];
@@ -29,6 +31,8 @@ function resetGame() {
   console.log(secretLetter);
 }
 
+//waits until other elements have finsihed loading before running javascript. 
+//"$" indicates the wait until "ready" function is itself jQuery
 $(document).ready(function() {
   /* ===========Loop Begins========= */
   // This function is run whenever the user presses a key.
