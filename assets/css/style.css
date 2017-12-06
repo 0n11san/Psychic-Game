@@ -1,6 +1,11 @@
 body {background-color: blue;
-color: white;
+color: blue;
 background-image: url("http://img1.looper.com/img/uploads/2017/03/most-terrible-things-professor-x-has-ever-done-1-780x438.jpg");
 background-repeat:no-repeat;
 background-position:center;}
 
+#mainContainer {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;}
